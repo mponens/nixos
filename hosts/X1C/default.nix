@@ -1,11 +1,13 @@
 { config, lib, pkgs, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
+      ../../modules/system.nix
+      ../../modules/laptop.nix
+      ../../modules/gui.nix
+      ../../modules/fonts.nix
       ./hardware-configuration.nix
     ];
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -15,34 +17,12 @@
     preLVM = true;
   };
 
-  nixpkgs.config = {
-    allowUnfree = true;
-  };
 
   networking.hostName = "IUseArchBTW"; # Define your hostname.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   time.timeZone = "America/Denver";
 
-  # Enable the X11 windowing system.
-  services.xserver = {
-    enable = true;
-    windowManager.awesome = {
-      enable = true;
-      luaModules = with pkgs.luaPackages; [
-        luarocks
-        luadbi-mysql
-	awesome-wm-widgets
-      ];
-    };
-  };
-
-  services.tlp = {
-    enable = true;
-    settings = {
-      STOP_CHARGE_THRESH_BAT0 = 80;
-    };
-  };
 
   services.syncthing = {
     enable = true;
@@ -52,45 +32,9 @@
     extraFlags = [ "--no-default-folder" ];
   };
 
-  services.picom = {
-    enable = true;
-    backend = "glx";
-    vSync = true;
-  };
-
-  services.displayManager = {
-    sddm.enable = true;
-    defaultSession = "none+awesome";
-  };
-
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-  };
-
-  services.libinput.enable = true;
-
-  users.users.daniel = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-    packages = with pkgs; [
-      tree
-    ];
-  };
-
-  programs = {
-    hyprland = {
-      enable = true;
-      xwayland.enable = true;
-    };
-  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim 
-    wget
-  ];
 
   system.stateVersion = "24.11";
 
