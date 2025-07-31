@@ -44,7 +44,7 @@ vim.cmd([[
 	Plug 'hrsh7th/cmp-cmdline'
 	Plug 'hrsh7th/nvim-cmp'
 
-	Plug 'wakatime/vim-wakatime'
+	" Plug 'wakatime/vim-wakatime'
 
 	Plug 'christoomey/vim-tmux-navigator'
 
@@ -107,7 +107,7 @@ require("conform").setup({
     lsp_format = "fallback",
   },
 })
---[[
+
 require("codecompanion").setup({
   display = {
 	  chat = {
@@ -125,7 +125,7 @@ require("codecompanion").setup({
     },
   },
 })
-]]
+
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
