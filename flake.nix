@@ -17,15 +17,13 @@
         in nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            # Import the previous configuration.nix we used,
-            # so the old configuration file still takes effect
-            ./configuration.nix
+            ./hosts/X1C
             home-manager.nixosModules.home-manager 
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
 
-              home-manager.users.daniel = import ./home.nix;
+              home-manager.users.${username} = import ./users/${username}/home.nix;
             }
           ];
        };
