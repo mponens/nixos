@@ -1,5 +1,8 @@
-{ config, username } : {
+{ config, username } : 
+let
   storagePath = "/home/${username}/.config/nixos";
   homeManagerPath = "${storagePath}/home";
-  mkOOSSToHome = path : (config.lib.file.mkOutOfStoreSymlink "${homeManagerPath}/${path}");
+in {
+  inherit storagePath homeManagerPath;
+  mkOOSSToHome = path : config.lib.file.mkOutOfStoreSymlink "${homeManagerPath}/${path}";
 }

@@ -1,4 +1,4 @@
-{ lib, username, ... }:
+{ username, ... }:
 {
   filesystem = import ./filesystem.nix;
 }
