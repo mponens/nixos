@@ -8,6 +8,6 @@ in {
   mkOOSSToHome = path: 
     let 
 	  dest = "${homeManagerPath}/${path}";
-	  result = config.lib.file.mkOutOfStoreSymlink "${dest}";
+	  result = config.lib.file.mkOutOfStoreSymlink dest;
     in builtins.trace "mkOOSSToHome result: ${toString result} with dest ${toString dest}" result;
 }
