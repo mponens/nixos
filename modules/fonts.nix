@@ -1,4 +1,4 @@
-{ pkgs, ..., } : {
+{ pkgs, ... } : {
   # shamelessly stolen 
   # https://github.com/ryan4yin/nix-config/blob/i3-kickstarter/modules/system.nix
   fonts = {

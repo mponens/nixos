@@ -14,7 +14,9 @@
     nixosConfigurations = {
       IUseArchBTW = let
           username = "daniel";
+	  specialArgs = {inherit username;};
         in nixpkgs.lib.nixosSystem {
+	  inherit specialArgs;
           system = "x86_64-linux";
           modules = [
             ./hosts/X1C
@@ -23,6 +25,7 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
 
+	      home-manager.extraSpecialArgs = inputs // specialArgs;
               home-manager.users.${username} = import ./users/${username}/home.nix;
             }
           ];
