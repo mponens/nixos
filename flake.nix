@@ -14,7 +14,8 @@
     nixosConfigurations = {
       IUseArchBTW = let
           username = "daniel";
-	  specialArgs = {inherit username;};
+		  myLib = import ./lib { inherit username; };
+	  specialArgs = { inherit username myLib; };
         in nixpkgs.lib.nixosSystem {
 	  inherit specialArgs;
           system = "x86_64-linux";

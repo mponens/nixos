@@ -1,6 +1,6 @@
 { pkgs, config, ... }: {
   home.file.".config/nvim" = {
-    source = ./nvim;
+    source = config.lib.file.mkOutOfStoreSymlink ./nvim;
     recursive = true;
   };
   home.file.".vimrc".source = ./vimrc;
