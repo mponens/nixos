@@ -17,25 +17,10 @@
     preLVM = true;
   };
 
-
   networking.hostName = "IUseArchBTW"; # Define your hostname.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   time.timeZone = "America/Denver";
-
-
-  services.syncthing = {
-    enable = true;
-    user = "daniel";
-    dataDir = "/home/daniel/syncthing";
-    openDefaultPorts = true;
-    extraFlags = [ "--no-default-folder" ];
-  };
-
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-
   system.stateVersion = "24.11";
 
 }
