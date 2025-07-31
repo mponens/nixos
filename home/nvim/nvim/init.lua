@@ -107,7 +107,7 @@ require("conform").setup({
     lsp_format = "fallback",
   },
 })
-
+--[[
 require("codecompanion").setup({
   display = {
 	  chat = {
@@ -125,7 +125,7 @@ require("codecompanion").setup({
     },
   },
 })
-
+]]
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
