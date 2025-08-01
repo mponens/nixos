@@ -19,4 +19,9 @@ in {
 	};
 	recursive = true;
   };
+
+  home.file.".config/kitty" = {
+    source = "${iDotfiles}/kitty";
+	recursive = true;
+  };
 }

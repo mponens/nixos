@@ -32,6 +32,7 @@
     nix-output-monitor
 
     neovim
+	kitty
     tmux
     obsidian
     anki
@@ -74,12 +75,4 @@
 
   programs.firefox.enable = true;
 
-  programs.kitty = {
-    enable = true;
-    settings = {
-      enable_audio_bell = false;
-      cursor_trail = 3;
-      cursor_trail_decay = "0.2 0.3";
-    };
-  };
 }

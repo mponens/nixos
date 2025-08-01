@@ -1,6 +1,5 @@
 # Installing
 
-## mkOutOfStoreSymlink
+# Inpurities
 
-Make sure to place this repo in `/home/${user}/.config/nixos` to ensure that certain config files will
-symlink to this repo (janky convenience method for quickly editing configs)
+Dotfiles currently use `mkOutOfStoreSymlink` which recquires this repo to be placed in a hard coded location for a succesful build, also means that currently no way to provision a user from scratch
