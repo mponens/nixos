@@ -8,7 +8,6 @@
     ripgrep
     jq
     yq-go
-    fzf
     eza
 
     mtr
@@ -51,10 +50,6 @@
 
   ];
 
-  programs.zoxide = {
-    enable = true;
-	enableBashIntegration = true;
-  };
 
   programs.gh = {
     enable = true;
@@ -64,6 +59,16 @@
 
   programs.git = {
     enable = true;
+  };
+
+  programs.zoxide = {
+    enable = true;
+	enableBashIntegration = true;
+  };
+
+  programs.fzf = {
+    enable = true;
+	enableBashIntegration = true;
   };
 
   programs.bash = {
