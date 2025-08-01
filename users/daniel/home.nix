@@ -2,7 +2,7 @@
 
   imports = [
     ../../home/core.nix
-    ../../home/nvim
+    ../../home/dotfiles.nix
     ../../home/programs
   ];
 
