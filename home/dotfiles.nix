@@ -1,11 +1,10 @@
 { pkgs, config, username, ... }: 
 let 
-  dotfiles = ./dotfiles;
-  sDotfiles = config.lib.file.mkOutOfStoreSymlink ./dotfiles;
+  dotfiles = config.lib.file.mkOutOfStoreSymlink /home/${username}/.config/nixos/home/dotfiles;
 in {
   home.file.".config/nvim" = {
-	source = "${sDotfiles}/nvim";
+	source = "${dotfiles}/nvim";
     recursive = true;
   };
-  home.file.".vimrc".source = "${sDotfiles}/nvim/.vimrc";
+  home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
 }

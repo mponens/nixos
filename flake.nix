@@ -2,6 +2,7 @@
   description = "A simple NixOS flake";
 
   inputs = { 
+	# Dotfiles is a submodule
   	self.submodules = true;
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     home-manager = {
