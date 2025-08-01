@@ -47,8 +47,17 @@
     lm_sensors # for `sensors` command
     pciutils
     usbutils
+
+	zoxide
     
   ];
+
+  programs.gh = {
+    enable = true;
+	gitCredentialHelper = {
+	  enable = true;
+	};
+  };
 
   programs.git = {
     enable = true;
