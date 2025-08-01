@@ -7,7 +7,7 @@
       luaModules = with pkgs.luaPackages; [
         luarocks
         luadbi-mysql
-	awesome-wm-widgets
+	    awesome-wm-widgets
       ];
     };
   };
