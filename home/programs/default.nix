@@ -49,9 +49,12 @@
     pciutils
     usbutils
 
-	zoxide
-    
   ];
+
+  programs.zoxide = {
+    enable = true;
+	enableBashIntegration = true;
+  };
 
   programs.gh = {
     enable = true;
@@ -63,8 +66,13 @@
     enable = true;
   };
 
+  programs.bash = {
+    enable = true;
+  };
+
   programs.starship = {
     enable = true;
+	enableBashIntegration = true;
     settings = {
       add_newline = false;
       aws.disabled = true;
