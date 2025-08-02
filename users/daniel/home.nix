@@ -1,9 +1,10 @@
-{ username, ... }: {
+{ pkgs, username, ... }: {
 
   imports = [
     ../../home/core.nix
     ../../home/dotfiles.nix
-    ../../home/programs
+    ../../home/programs/common.nix
+    ../../home/programs/entertainment.nix
   ];
 
   programs.git = {
