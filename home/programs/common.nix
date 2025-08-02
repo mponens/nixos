@@ -30,7 +30,7 @@
 
     nix-output-monitor
 
-	kitty
+    kitty
     tmux
     obsidian
     anki
@@ -47,14 +47,14 @@
     pciutils
     usbutils
 
-	# audio
-	pavucontrol
-	pamixer
-	bluez
-	bluez-tools
-
-	#development
-	lua-language-server
+    # audio
+    pavucontrol
+    pamixer
+    bluez
+    bluez-tools
+    
+    #development
+    lua-language-server
     rust-analyzer
     pyright
     typescript-language-server
@@ -70,8 +70,9 @@
 
   programs.gh = {
     enable = true;
-	gitCredentialHelper = {
-	};
+    gitCredentialHelper = {
+      enable = true;
+    };
   };
 
   programs.git = {
@@ -80,12 +81,12 @@
 
   programs.zoxide = {
     enable = true;
-	enableBashIntegration = true;
+    enableBashIntegration = true;
   };
 
   programs.fzf = {
     enable = true;
-	enableBashIntegration = true;
+    enableBashIntegration = true;
   };
 
   programs.bash = {
@@ -94,7 +95,7 @@
 
   programs.starship = {
     enable = true;
-	enableBashIntegration = true;
+    enableBashIntegration = true;
     settings = {
       add_newline = false;
       aws.disabled = true;
@@ -107,9 +108,9 @@
 
   programs.neovim = {
     enable = true;
-	defaultEditor = true;
+    defaultEditor = true;
 
-	plugins = with pkgs.vimPlugins; [
+    plugins = with pkgs.vimPlugins; [
       # Core plugins
       vim-sensible
       nvim-web-devicons
@@ -174,5 +175,4 @@
       # vim-wakatime
     ];
   };
-
 }
