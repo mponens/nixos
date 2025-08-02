@@ -48,6 +48,12 @@
     pciutils
     usbutils
 
+	# audio
+	pavucontrol
+	pamixer
+	bluez
+	bluez-tools
+
   ];
 
 

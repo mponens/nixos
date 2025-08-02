@@ -20,15 +20,28 @@
     extraFlags = [ "--no-default-folder" ];
   };
 
+  hardware.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
+	alsa.enable = true;
+	alsa.support32Bit = true;
     pulse.enable = true;
   };
-  services.printing.enable = true;
 
+  hardware.bluetooth = {
+    enable = true;
+	powerOnBoot = true;
+  };
+
+  services.printing.enable = true;
   environment.systemPackages = with pkgs; [
     vim 
     wget
+	alsa-firmware
+	alsa-ucm-conf
+	alsa-utils
+	alsa-lib
+	sof-firmware
   ];
 
 }
