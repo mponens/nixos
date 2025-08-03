@@ -4,10 +4,15 @@ let
   iDotfiles = ./dotfiles; # Immutable config
 in {
   home.file.".config/nvim" = {
-	source = "${dotfiles}/nvim";
+    source = "${dotfiles}/nvim";
     recursive = true;
   };
   home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
+
+  home.file.".config/awesome" = {
+    source = "${dotfiles}/awesome";
+    recursive = true;
+  };
 
   home.file.".tmux.conf".source = "${iDotfiles}/tmux/tmux.conf";
   home.file.".tmux/plugins/tpm" = {
@@ -24,4 +29,5 @@ in {
     source = "${iDotfiles}/kitty";
 	recursive = true;
   };
+
 }

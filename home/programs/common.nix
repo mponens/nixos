@@ -136,6 +136,8 @@
       # Language specific
       nvim-jdtls
       rust-tools-nvim
+
+      taskmaster
       
       # Treesitter
       (nvim-treesitter.withPlugins (p: [
