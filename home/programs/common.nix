@@ -65,6 +65,8 @@
     isort
     rustfmt
     prettierd
+
+    rofi-wayland-unwrapped
   ];
 
 
