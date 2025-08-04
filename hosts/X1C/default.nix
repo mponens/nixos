@@ -6,6 +6,7 @@
       ../../modules/laptop.nix
       ../../modules/gui.nix
       ../../modules/fonts.nix
+      ../../modules/steam.nix
       ./hardware-configuration.nix
     ];
 

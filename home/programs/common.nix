@@ -44,6 +44,7 @@
 
     sysstat
     lm_sensors # for `sensors` command
+    acpi
     pciutils
     usbutils
 
