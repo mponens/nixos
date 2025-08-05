@@ -68,6 +68,10 @@
     prettierd
 
     rofi-wayland-unwrapped
+    wl-clipboard
+    swayidle
+    waybar
+    swaylock
   ];
 
 

@@ -42,6 +42,7 @@
 	alsa-utils
 	alsa-lib
 	sof-firmware
+    pulseaudio #pactl
   ];
 
 }

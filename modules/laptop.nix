@@ -1,5 +1,4 @@
-
-{ ... } : {
+{ pkgs, ... } : {
   services.tlp = {
     enable = true;
     settings = {
@@ -8,4 +7,8 @@
   };
 
   services.libinput.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    brightnessctl
+  ];
 }
