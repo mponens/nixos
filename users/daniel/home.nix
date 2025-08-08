@@ -3,6 +3,7 @@
   imports = [
     ../../home/core.nix
     ../../home/dotfiles.nix
+    ../../home/programs/ctf.nix
     ../../home/programs/common.nix
     ../../home/programs/entertainment.nix
   ];

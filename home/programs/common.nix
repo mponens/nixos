@@ -58,6 +58,7 @@
     lua-language-server
     rust-analyzer
     pyright
+	emmet-ls
     typescript-language-server
     
     # Formatters
