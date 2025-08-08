@@ -54,13 +54,6 @@
     bluez
     bluez-tools
     
-    #development
-    lua-language-server
-    rust-analyzer
-    pyright
-	emmet-ls
-    typescript-language-server
-    
     # Formatters
     stylua
     black
@@ -73,6 +66,8 @@
     swayidle
     waybar
     swaylock
+
+    keepassxc
   ];
 
 
