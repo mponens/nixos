@@ -4,6 +4,7 @@
     rust-analyzer
     pyright
 	emmet-ls
+    ccls
     typescript-language-server
     gcc
     blender
