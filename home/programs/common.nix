@@ -176,6 +176,9 @@
       render-markdown-nvim
       
       # vim-wakatime
+
+      # Suffering
+      competitest-nvim
     ];
   };
 }
