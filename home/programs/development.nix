@@ -6,6 +6,7 @@
 	emmet-ls
     ccls
     typescript-language-server
+    jdt-language-server
     gcc
     blender
   ];
