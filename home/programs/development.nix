@@ -8,7 +8,11 @@
     typescript-language-server
     gcc
     blender
-    nix-direnv
   ];
+  programs.direnv = {
+    enable = true;
+    enableBashIntegration = true;
+    nix-direnv.enable = true;
+  };
 
 }
