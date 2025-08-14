@@ -68,6 +68,7 @@
     swaylock
 
     keepassxc
+    calibre
   ];
 
 
