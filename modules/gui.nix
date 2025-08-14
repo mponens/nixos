@@ -18,6 +18,8 @@
     vSync = true;
   };
 
+  services.greenclip.enable = true;
+
   services.displayManager = {
     sddm.enable = true;
     defaultSession = "none+awesome";
