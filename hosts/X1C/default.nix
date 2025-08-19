@@ -21,7 +21,7 @@
   networking.hostName = "IUseArchBTW"; # Define your hostname.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
-  time.timeZone = "America/Denver";
+  time.timeZone = "America/Fort_Wayne";
   system.stateVersion = "24.11";
 
 }

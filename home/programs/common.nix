@@ -73,7 +73,7 @@
     flameshot
 
     xclip
-    xorg
+    xorg.xrandr
   ];
 
 
