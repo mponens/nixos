@@ -7,6 +7,7 @@
     ../../home/programs/common.nix
     ../../home/programs/development.nix
     ../../home/programs/entertainment.nix
+    ../../home/programs/nvim.nix
   ];
 
   programs.git = {
