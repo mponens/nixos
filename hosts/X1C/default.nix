@@ -7,6 +7,7 @@
       ../../modules/gui.nix
       ../../modules/fonts.nix
       ../../modules/steam.nix
+      ../../modules/mullvad.nix
       ./hardware-configuration.nix
     ];
 

@@ -3,6 +3,7 @@
   nixpkgs.config = {
     allowUnfree = true;
   };
+  services.dbus.enable = true;
 
   users.users.${username} = {
     isNormalUser = true;
