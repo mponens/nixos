@@ -8,6 +8,7 @@
       ../../modules/fonts.nix
       ../../modules/laptop.nix
       ../../modules/system.nix
+      ../../modules/sops.nix
 
       ../../modules/extra/mullvad.nix
       ../../modules/extra/nix_ld.nix
