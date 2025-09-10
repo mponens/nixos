@@ -8,6 +8,7 @@
       ../../modules/fonts.nix
       ../../modules/steam.nix
       ../../modules/mullvad.nix
+      ../../modules/linker.nix
       ./hardware-configuration.nix
     ];
 
