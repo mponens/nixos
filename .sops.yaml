@@ -1,8 +1,12 @@
 keys:
-  - &dev age1qupfvxr6vwtcw5gpqqwdjl5l3wdhngzskgzedqcdahmwsmdvyp5s57uzne
+  -&users:
+    - &daniel age1qupfvxr6vwtcw5gpqqwdjl5l3wdhngzskgzedqcdahmwsmdvyp5s57uzne
+  -&hosts:
+    - &X1C age1xx98apdxq02au4en93q270gzzf7zdjwg09gmgwnkqznyrpj3vams43csgg
 
 creation_rules:
   - path_regex: secrets.yaml$
     key_groups:
       - age:
-        - *dev
+        - *daniel
+        - *X1C
