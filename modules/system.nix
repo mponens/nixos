@@ -13,29 +13,6 @@
     ];
   };
 
-  services.syncthing = {
-    enable = true;
-    user = "${username}";
-    dataDir = "/home/${username}/syncthing";
-    openDefaultPorts = true;
-    extraFlags = [ "--no-default-folder" ];
-  };
-
-  hardware.pulseaudio.enable = false;
-  services.pipewire = {
-    enable = true;
-	alsa.enable = true;
-	alsa.support32Bit = true;
-    pulse.enable = true;
-  };
-
-  hardware.bluetooth = {
-    enable = true;
-	powerOnBoot = true;
-  };
-  services.blueman.enable = true;
-
-  services.printing.enable = true;
   environment.systemPackages = with pkgs; [
     vim 
     wget

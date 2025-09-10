@@ -2,13 +2,18 @@
 
 {
   imports = [
-      ../../modules/system.nix
-      ../../modules/laptop.nix
-      ../../modules/gui.nix
+      ../../modules/audio.nix
+      ../../modules/bluetooth.nix
+      ../../modules/desktop.nix
       ../../modules/fonts.nix
-      ../../modules/steam.nix
+      ../../modules/laptop.nix
       ../../modules/mullvad.nix
-      ../../modules/linker.nix
+      ../../modules/nix_ld.nix
+      ../../modules/printing.nix
+      ../../modules/ssh.nix
+      ../../modules/steam.nix
+      ../../modules/syncthing.nix
+      ../../modules/system.nix
       ./hardware-configuration.nix
     ];
 
