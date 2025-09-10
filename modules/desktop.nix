@@ -1,3 +1,4 @@
+# Setup a desktop / windowing environment
 { pkgs, lib, username, ... } : {
 
   services.xserver = {
@@ -32,4 +33,5 @@
       xwayland.enable = true;
     };
   };
+
 }

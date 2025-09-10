@@ -7,13 +7,14 @@
       ../../modules/desktop.nix
       ../../modules/fonts.nix
       ../../modules/laptop.nix
-      ../../modules/mullvad.nix
-      ../../modules/nix_ld.nix
-      ../../modules/printing.nix
-      ../../modules/ssh.nix
-      ../../modules/steam.nix
-      ../../modules/syncthing.nix
       ../../modules/system.nix
+
+      ../../modules/extra/mullvad.nix
+      ../../modules/extra/nix_ld.nix
+      ../../modules/extra/printing.nix
+      ../../modules/extra/ssh.nix
+      ../../modules/extra/steam.nix
+      ../../modules/extra/syncthing.nix
       ./hardware-configuration.nix
     ];
 
