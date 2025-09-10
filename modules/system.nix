@@ -7,7 +7,7 @@
 
   users.users.${username} = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "keys" ]; # sudo + sops secrets
     packages = with pkgs; [
       tree
     ];

@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ username, inputs, config, ... }: {
 
   sops = {
     defaultSopsFile = ../secrets.yaml;
@@ -7,5 +7,8 @@
       keyFile = "/var/lib/sops-nix/key.txt";
       generateKey = true;
     };
+	secrets = {
+	  "api-keys/gemini-api-key".owner = username;
+	};
   };
 }
