@@ -10,6 +10,7 @@
       ../../modules/system.nix
       ../../modules/sops.nix
 
+	  ../../modules/extra/podman.nix
       ../../modules/extra/mullvad.nix
       ../../modules/extra/nix_ld.nix
       ../../modules/extra/printing.nix
