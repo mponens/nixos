@@ -11,6 +11,7 @@
       
       # Themes
       dracula-vim
+	  base16-vim
       nord-vim
       catppuccin-nvim
       
