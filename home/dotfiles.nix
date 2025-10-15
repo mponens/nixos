@@ -26,7 +26,7 @@ in {
   };
 
   home.file.".config/kitty" = {
-    source = "${iDotfiles}/kitty";
+    source = "${dotfiles}/kitty";
 	recursive = true;
   };
 
