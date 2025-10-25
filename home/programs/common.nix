@@ -53,13 +53,6 @@
     pamixer
     bluez
     bluez-tools
-    
-    # Formatters
-    stylua
-    black
-    isort
-    rustfmt
-    prettierd
 
     rofi-wayland-unwrapped
     wl-clipboard
@@ -70,10 +63,12 @@
     keepassxc
     calibre
     thunderbird
+	sioyek
     flameshot
 
     xclip
     xorg.xrandr
+	arandr
   ];
 
 

@@ -8,6 +8,7 @@
     ../../home/programs/development.nix
     ../../home/programs/entertainment.nix
     ../../home/programs/nvim.nix
+    ../../home/programs/telegram.nix
   ];
 
   programs.git = {

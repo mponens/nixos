@@ -9,6 +9,13 @@
     jdt-language-server
     gcc
     blender
+
+    # Formatters
+    stylua
+    black
+    isort
+    rustfmt
+    prettierd
   ];
   programs.direnv = {
     enable = true;
