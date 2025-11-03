@@ -69,6 +69,8 @@
     xclip
     xorg.xrandr
 	arandr
+	
+	element-web
   ];
 
 
