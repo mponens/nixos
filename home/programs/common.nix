@@ -70,7 +70,7 @@
     xorg.xrandr
 	arandr
 	
-	element-web
+	element-desktop
   ];
 
 
