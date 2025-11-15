@@ -14,7 +14,7 @@ in {
     recursive = true;
   };
 
-  home.file.".tmux.conf".source = "${iDotfiles}/tmux/tmux.conf";
+  home.file.".tmux.conf".source = "${dotfiles}/tmux/tmux.conf";
   home.file.".tmux/plugins/tpm" = {
     source = pkgs.fetchFromGitHub {
 	  owner = "tmux-plugins";
