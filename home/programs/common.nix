@@ -71,6 +71,7 @@
 	arandr
 	
 	element-desktop
+	libreoffice
   ];
 
 
