@@ -20,6 +20,8 @@
     obsidian
     anki
 
+	nemo
+
 	ffmpeg
 
 	qbittorrent
