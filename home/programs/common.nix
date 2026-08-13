@@ -81,7 +81,7 @@
 	bashrcExtra = ''
 
 alias ns="nix search nixpkgs"
-alias slop="nix run github:numtide/llm-agents.nix#codex"
+alias slop="npx @openai/codex"
 [ -n "$DISTROBOX_ENTER_PATH" ] && . "$HOME/.bash-distrobox-rc"
 dev-init () {
 nix flake init --template "https://flakehub.com/f/the-nix-way/dev-templates/*#$1"

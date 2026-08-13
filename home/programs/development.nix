@@ -20,8 +20,9 @@
     isort
     prettierd
 
+	nodejs_22
+
 	distrobox
-	codex
 
 	wireguard-tools
   ];
