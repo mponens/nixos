@@ -12,6 +12,7 @@
       ../../modules/sops.nix
       ../../modules/extraHosts.nix	
 	  ../../modules/extra/openocd.nix
+	  ../../modules/extra/udiskie.nix
 
 	  ../../modules/extra/kdeconnect.nix
 	  ../../modules/extra/podman.nix
