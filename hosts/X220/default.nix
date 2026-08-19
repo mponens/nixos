@@ -12,6 +12,7 @@
     ../../modules/sops.nix
     ../../modules/extraHosts.nix	
 
+	  ../../modules/extra/udiskie.nix
 	  ../../modules/extra/podman.nix
 	  ../../modules/extra/virtualisation.nix
     ../../modules/extra/mullvad.nix
