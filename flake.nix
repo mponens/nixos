@@ -81,6 +81,31 @@
 		];
 	  };
 
+	  Sakamoto = let
+		username = "daniel";
+		specialArgs = { inherit username; };
+	  in nixpkgs.lib.nixosSystem {
+		inherit system specialArgs;
+		modules = [
+		  ./hosts/Sakamoto
+		  sops-nix.nixosModules.sops
+		  home-manager.nixosModules.home-manager 
+		  {
+			nixpkgs.overlays = [ unstableOverlay ];
+		  }
+		  {
+			home-manager.useGlobalPkgs = true;
+			home-manager.useUserPackages = true;
+
+			home-manager.extraSpecialArgs = inputs // specialArgs;
+			home-manager.users.${username} = import ./users/${username}/home.nix; # Use minimal version
+		  }
+		  {
+			nix.settings.trusted-users = [username];
+		  }
+		];
+	  };
+
 	  Linode = let
 		username = "daniel";
 		specialArgs = { inherit username; };
