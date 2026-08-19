@@ -13,6 +13,7 @@
       ../../modules/extraHosts.nix	
 	  ../../modules/extra/openocd.nix
 
+	  ../../modules/extra/udiskie.nix
 	  ../../modules/extra/kdeconnect.nix
 	  ../../modules/extra/podman.nix
 	  ../../modules/extra/virtualisation.nix
@@ -44,4 +45,3 @@
   system.stateVersion = "24.11";
 
 }
-
