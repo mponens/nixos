@@ -5,6 +5,7 @@ in {
   home.file.".config/nvim".source = "${dotfiles}/nvim";
   home.file.".config/niri".source = "${dotfiles}/niri";
   home.file.".config/waybar".source = "${dotfiles}/waybar";
+  home.file.".config/mako".source = "${dotfiles}/mako";
   home.file.".vimrc".source = "${dotfiles}/nvim/.vimrc";
   home.file.".config/awesome".source = "${dotfiles}/awesome";
   home.file.".config/kitty".source = "${dotfiles}/kitty";
