@@ -34,6 +34,8 @@
 	# Notifications
 	libnotify
 	mako
+
+	chromium
   ];
   programs.firefox.enable = true;
 }
